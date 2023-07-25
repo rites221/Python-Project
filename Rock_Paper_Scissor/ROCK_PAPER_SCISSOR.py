@@ -47,3 +47,25 @@ elif You_Choose > Computer_Chooses:
 elif Computer_Chooses == You_Choose:
     print("It's a tie")
 
+
+#2nd code
+
+Your_Choice = input("What Do you want to choose?\nRock, Paper, Scissors\n").lower()
+list_R_P_S = ["Rock","Paper","Scissors"]
+Computer_Chooses = (random.choice(list_R_P_S)).lower()
+print(Computer_Chooses)
+if Your_Choice == "rock" and Computer_Chooses == "paper":
+    print("You Loose, Computer Wins")
+elif Your_Choice == "paper" and Computer_Chooses == "scissors":
+    print("You Loose, Computer Wins")
+elif Your_Choice == "scissors" and Computer_Chooses == "rock":
+    print("You Loose, Computer Wins")
+elif Your_Choice == Computer_Chooses:
+    print("It's a draw")
+elif Your_Choice == "paper" and Computer_Chooses == "rock":
+    print("You Won")
+elif Your_Choice == "scissors" and Computer_Chooses == "paper":
+    print("You Won")
+elif Your_Choice == "Scissors" and Computer_Chooses == "rock":
+    print("You Won")
+
